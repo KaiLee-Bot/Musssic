@@ -1,41 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musica!</title>
-    <link rel="icon" href="URL_DA_IMAGEM_DO_SPOTIFY">
-    <style>
-        body {
-            background-color: #121212;
-            color: #1DB954;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-
-        h1 {
-            font-size: 5rem;
-            color: white;
-            text-shadow: 0 0 10px #1DB954, 0 0 20px #1DB954, 0 0 30px #1DB954;
-        }
-
-        /* Esconder o iframe */
-        iframe {
-            position: absolute;
-            left: -9999px;
-        }
-    </style>
+    <title>Reprodução de Música</title>
 </head>
 <body>
-    <h1>Musica!</h1>
+    <h1>Ouça...</h1>
+    <p>A música começará a tocar automaticamente quando a página for carregada.</p>
 
-    <!-- Embutir o vídeo do YouTube (com autoplay) e escondê-lo -->
-    <iframe width="0" height="0" src="https://www.youtube.com/embed/AtYuKryoKoI?autoplay=1&loop=1&playlist=AtYuKryoKoI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+    <!-- Incorporando vídeo do YouTube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AtYuKryoKoI?autoplay=1" 
+    title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </body>
 </html>
