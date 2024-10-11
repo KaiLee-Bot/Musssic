@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Musica!</title>
-    <!-- Ícone do Spotify -->
     <link rel="icon" href="URL_DA_IMAGEM_DO_SPOTIFY">
     <style>
         body {
-            background-color: #121212; /* Cor de fundo parecida com a do Spotify */
-            color: #1DB954; /* Cor verde similar ao Spotify */
+            background-color: #121212;
+            color: #1DB954;
             font-family: Arial, sans-serif;
             text-align: center;
             height: 100vh;
@@ -23,21 +21,21 @@
         h1 {
             font-size: 5rem;
             color: white;
-            text-shadow: 0 0 10px #1DB954, 0 0 20px #1DB954, 0 0 30px #1DB954; /* Brilho esverdeado */
+            text-shadow: 0 0 10px #1DB954, 0 0 20px #1DB954, 0 0 30px #1DB954;
         }
 
-        audio {
-            display: none; /* O áudio ficará oculto */
+        /* Esconder o iframe */
+        iframe {
+            position: absolute;
+            left: -9999px;
         }
     </style>
 </head>
 <body>
     <h1>Musica!</h1>
 
-    <!-- Player de música oculto -->
-    <audio autoplay loop>
-        <source src="https://youtu.be/AtYuKryoKoI?si=pm0rXQc-UDxILhrD" type="audio/mpeg">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
+    <!-- Embutir o vídeo do YouTube (com autoplay) e escondê-lo -->
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/AtYuKryoKoI?autoplay=1&loop=1&playlist=AtYuKryoKoI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 </body>
 </html>
